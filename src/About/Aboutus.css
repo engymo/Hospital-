@@ -1,0 +1,152 @@
+:root{
+    --primary-color: #1f2278;
+    --sec-color:#f17723;
+    --third-color:#565acf;
+}
+
+.box4{
+    background-color: #e6e7ff;
+    border-radius: 60px 60px 0 60px;
+    color: #565acf;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 40px;
+    height: 200px;
+    position: relative;
+    width: 195px;
+    z-index: 2;
+} 
+.textbox4{
+    font-size: 20px;
+    color: #1f2278;
+}
+.box4 ::after{
+    border: 2px solid #565acf;
+    border-radius: 60px 60px 0 60px;
+    content: "";
+    height: 100%;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+
+}
+.photobox1{
+    padding-right: 20px;
+    width: 35%;
+    height: 35%;
+    border-radius: 0 50px 50px 50px;
+}
+.photobox2{
+    width: 50%;
+    border-radius: 60px 0px 60px 60px;
+}
+.photobox3{
+    padding-right: 20px;
+    width: 35%;
+    height: 35%;
+    border-radius: 40px 40px 40px 0px;
+    z-index: 1;
+}
+
+.box1{
+    border-radius: 12px;
+    border: solid 1px #67d3b8;
+} 
+.box2{
+    border-radius: 12px;
+    border: solid 1px #66d193;
+}
+.box3{
+    border-radius: 12px;
+    border: solid 1px #f195c8;
+}
+.box44{
+    border-radius: 12px;
+    border: solid 1px #dd7ce6;
+}
+.icon-detail{
+    font-size: 18px;
+    color: #565acf;
+    font-weight: 500;
+}
+
+.about-us h5{
+    padding-left: 12px;
+    width: 30%;
+    font-weight: 600;
+    color: var(--sec-color);
+    background: url(../assist/download\ \(18\).png);
+}
+.about-us h3{
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 700;
+}
+.about-us p{
+    color: var(--primary-color);
+
+}
+
+.about-us{
+    position: relative;
+}
+.squar{
+    width: 6% !important;
+    height: 9% !important;
+    position: absolute;
+    right: 7%;
+    top: 230%;
+    animation: moveleftright  1s infinite alternate; 
+
+}
+.qwe{
+    width: 10% !important;
+    height: 18% !important;
+    position: absolute;
+    position: absolute;
+    right: 5%;
+    top: 172%;
+    animation: rotate 20s infinite alternate ;
+
+
+}
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.circle{
+    width: 6% !important;
+    height: 9% !important;
+    position: absolute;
+    right: 20%;
+    top: 240%;
+    animation: move  2s infinite alternate;
+}
+.waves{
+    width: 10% !important;
+    height: 9% !important;
+    position: absolute;
+    top:227%;
+    left: 5%;
+    animation: moveleftright  1s infinite alternate; 
+    
+}
+
+@keyframes moveleftright {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}

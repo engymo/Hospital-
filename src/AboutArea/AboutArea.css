@@ -1,0 +1,58 @@
+.area-section{
+    background:url(../assist/download\ \(22\).png);
+    background-color: rgb(230, 228, 228);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px
+}
+
+.img1{
+    animation: moveleftright  3s infinite alternate; 
+
+
+}
+.img-move{
+    animation: move  2s infinite alternate;
+}
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveleftright {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+.form-control{
+    outline: none !important;
+}
+.form-control:hover{
+    border:1px solid #1f2278 !important;
+
+}
+.appointment-box{
+    position: relative;
+    z-index: 1;
+}
+.appointment-form ::before{
+    z-index: -1;
+    content: "";
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: -3%;
+    left: -1%;
+    border-top: solid 2px #565acf;
+    border-left: solid 2px #565acf;
+    border-radius: 20px;
+}
